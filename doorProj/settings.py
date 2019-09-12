@@ -25,7 +25,10 @@ SECRET_KEY = 'ci=6nnoh$vuvip_n6f#nc5gyb+rqd)u2d=thf336qq6y@#$nh1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "192.168.1.10",
+]
 
 
 # Application definition
@@ -35,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'doorProj',
