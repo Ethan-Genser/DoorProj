@@ -26,8 +26,8 @@ SECRET_KEY = 'ci=6nnoh$vuvip_n6f#nc5gyb+rqd)u2d=thf336qq6y@#$nh1'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "localhost",
-    "192.168.1.10",
+    "localhost",       # Loopback
+    "192.168.1.2",     # Door_RPi3A+2
 ]
 
 
@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'doorProj',
     'door',
+    'api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +76,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'doorProj.wsgi.application'
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 
 # Database
