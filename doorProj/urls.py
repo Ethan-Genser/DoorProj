@@ -21,7 +21,6 @@ from door import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #url(r'^$', views.open, name='open'),
     path('open/', views.open, name="open"),
     path('api/', include('api.urls')),
 ]

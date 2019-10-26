@@ -22,7 +22,7 @@ def open(self):
     httpResponse = HttpResponse(RESPONSE_STRING)
     httpResponse['ExitStatus'] = 1
 
-    # Runs python script to run the motors
+    # Calls python script to run the motors
     subprocess.call(RUN_CMD, shell=True)
 
     # Returns HTTP response object
