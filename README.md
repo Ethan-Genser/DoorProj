@@ -1,5 +1,5 @@
 # DoorProj
-A project that will open our door using a Raspberry Pi, motor, and android application.
+A collaborative with [Ethan Shoe](https://github.com/EthanShoe/) that uses a Raspberry Pi, set of motors, and android application to open door with a single tap on our phone.
 
 ![img](https://github.com/Ethan-Genser/DoorProj/blob/master/Door.png)
 
